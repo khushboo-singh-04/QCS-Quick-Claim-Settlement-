@@ -1,0 +1,41 @@
+/* input.ng-invalid{
+    border-color: red;
+    border-width: 2px;
+}
+input.ng-valid{
+    border-color:green;
+    border-width: 2px;
+}
+select.ng-invalid{
+    border-color: red;
+    border-width: 2px;
+}
+select.ng-valid{
+    border-color:green;
+    border-width: 2px;
+} */
+td{
+    padding: 3%;
+}
+li{
+    color: white;
+}
+#body{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+#body tr,td{
+    padding: 15px;
+    /* border: 1px solid #ddd;
+    text-align: left; */
+}
+#body tr {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#body tr:nth-child(even) {
+    background-color: dodgerblue;
+    color: white;
+}

@@ -1,0 +1,59 @@
+        <div class="container" id="reg" ng-controller="claimregctrl">
+            <h2 class="text-center">Intimated Claim Details </h2>
+            <form name="claimreg" ng-submit="reg_form(claimreg.$valid)" novalidate>
+                <table ng-init="loaderflag=false">
+                    <tr class="form-group">
+                        <td>Cause Of Loan</td>
+                        <td><input class="form-control" pattern="[a-zA-Z]{3,}" required type="text" name="loancause" ng-model="loancause"></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>Driver Name</td>
+                        <td><input class="form-control" pattern="[a-zA-Z]{3,}" required type="text" name="drivername" ng-model="drivername"></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>DL Number</td>
+                        <td><input class="form-control" pattern="[A-Za-z0-9]{3,}" required type="text" name="dlno" ng-model="dlno"></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>DL Class</td>
+                        <td>
+                            <select class="form-control" name="dlclass"  ng-init="dlclass='Transport'" ng-model="dlclass">
+                                <option value="Transport">Transport</option>
+                                <option value="LMV">LMV</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>DL Type</td>
+                        <td>
+                            <select class="form-control" name="dltype" ng-init="dltype='Permenant'" ng-model="dltype">
+                                <option value="Permenant">Permenant</option>
+                                <option value="Temporary">Temporary</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="form-group">
+                        <td>DL Expiry Date</td>
+                        <td><input type="date" ng-placeholder="dd-mm-yyyy"  class="form-control" required name="expirydate" ng-model="expirydate"></td>
+                        <!-- <input type="datetime" name="" id=""> -->
+                        <!-- <input type="datetime-local" name="" id=""> -->
+                        <!-- <script>
+                            document.getElementById("date").value = Date();
+                            value="17-Jul-2019" min="17-Jul-2019"
+                        </script> -->
+                    </tr>
+                    <tr class="form-group">
+                        <td>Vehicle Location</td>
+                        <td><input class="form-control" pattern="[a-zA-Z]{3,}" required type="text" name="location" ng-model="location"></td>
+                    </tr>
+                    <tr class="form-group">
+                        <td></td>
+                        <td><button class="btn btn-primary mb-2" ng-disabled="flag" >Submit Query</button></td>
+                        <td><span>{{msg}}</span></td>
+                        <td>
+                            <div class="lds-hourglass" ng-model="loaderflag"  ng-class="{loadernone:loaderflag==false , loaderdisplay:loaderflag==true}"></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>

@@ -1,0 +1,106 @@
+body{
+    background-color: azure;
+}
+#logo{
+    margin-left: 40%;
+    width: 250px;
+    height: 150px;
+}
+/* header h2{
+    padding: 2%;
+} */
+#main{
+    position: relative;
+}
+#main form{
+    position: absolute;
+    left: 25%;
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    }
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid #ff0000;
+    border-color: #ff0000 transparent  #ff0000 transparent;
+    animation: lds-hourglass 1.2s infinite;
+    }
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+    }
+
+/* #loader {
+    position: absolute; 
+    left: 70%;
+    top: 100%;
+    width: 50px;
+    z-index: 1;
+    height: 50px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    } */
+.loadernone{
+    display: none;
+}
+.loaderdisplay{
+    display: inline;
+}
+#footer{
+    background-color: dodgerblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+}
+    /* /* Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+
+    }
+    /* Medium devices (tablets, 768px and up) 
+    @media (min-width: 768px) {
+
+    }
+    /* Large devices (desktops, 992px and up) 
+    @media (min-width: 992px) {
+
+    }
+    /* Extra large devices (large desktops, 1200px and up) 
+    @media (min-width: 1200px) {
+
+    }  */
